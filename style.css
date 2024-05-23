@@ -1,0 +1,516 @@
+/* ----- POPPINS FONT Link ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    background: #6666ff;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-name {
+    color: #6666ff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu_list {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #6666ff;
+    transition: all 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#home {
+    margin-top: 70px;
+}
+
+.featured-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-text {
+    flex: 1;
+}
+
+.featured-text-card {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.featured-text-card:hover {
+    transform: scale(1.03);
+    background: #6666ff;
+    color: #fff;
+}
+
+.featured-name {
+    font-size: 35px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-name span {
+    font-size: 40px;
+    color: #6666ff;
+}
+
+.featured-text-info {
+    color: #6666ff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.featured-text-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.featured-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-image .image {
+    width: 60%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.top-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.top-header h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #6666ff;
+    margin-bottom: 10px;
+}
+
+.top-header span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.about-info h3 {
+    font-size: 20px;
+    color: #6666ff;
+}
+
+.about-info h2,
+.about-info h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+}
+
+.about-info h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6666ff;
+    margin-bottom: 10px;
+}
+
+.bottom-footer {
+    text-align: center;
+    padding: 20px;
+    background: #6666ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+.skills-box {
+    margin: 10px;
+}
+
+.skills-header {
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.skills-list span {
+    font-size: 14px;
+    background: rgb(110, 87, 224);
+    color: var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  /* Styling for Project Cards */
+.project-card {
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+  }
+  
+  
+  /* Background Image for Project Cards */
+  .project-card .project-image {
+    height: 200px; /* Set height for the image */
+    background-image: url('project-image.jpg'); /* Replace 'project-image.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Gradient Overlay for Project Cards */
+  .project-card .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0)); /* Black gradient overlay */
+  }
+  
+  /* Styling for Project Title */
+  .project-card h3 {
+    font-size: 20px; /* Font size for project title */
+    color: #fff; /* White color */
+    margin: 0;
+    padding: 20px; /* Add padding to the title */
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background color */
+    border-bottom: 1px solid rgba(255,255,255,0.1); /* Add a bottom border */
+  }
+  
+  /* Styling for Project Description */
+  .project-card p {
+    font-size: 16px; /* Normal font size */
+    color: #666; /* Medium gray color */
+    padding: 20px; /* Add padding to the description */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Button Container Styling */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding */
+  }
+  
+  /* Button Styling */
+  .button-container .btn {
+    margin: 0 10px; /* Add spacing between buttons */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6666ff; /* Purple button color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container .btn-github {
+    background-color: #333; /* Dark gray button for GitHub */
+  }
+  
+  .button-container .btn:hover {
+    background-color: #555; /* Darker color on hover */
+  }
+  
+
+
+.contact-info {
+    background: #efefef;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    font-size: 25px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    background: #efefef;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.text-area {
+    margin-bottom: 20px;
+}
+
+.text-area textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    resize: none;
+}
+
+.form-button {
+    text-align: right;
+}
+
+form button {
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+form button:hover {
+    transform: scale(1.03);
+    background: #6666ff;
+    color: #fff;
+}
+
+.bottom-footer {
+    text-align: center;
+    padding: 20px;
+    background: #6666ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu-btn {
+        display: block;
+    }
+
+    .nav-menu.show {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .nav_menu_list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .featured-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .featured-image .image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
