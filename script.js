@@ -9,13 +9,15 @@ var typingEffect = new Typed(".typedText", {
 })
 
 
-const navMenuBtn = document.querySelector('.nav-menu-btn');
-const navMenu = document.querySelector('.nav-menu');
+function toggleMenu() {
+    var menu = document.getElementById("myNavMenu");
+    var barsIcon = document.querySelector(".fa-bars");
+    var timesIcon = document.querySelector(".fa-times");
 
-navMenuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-});
-
+    menu.classList.toggle("show");
+    barsIcon.style.display = barsIcon.style.display === "none" ? "inline-block" : "none";
+    timesIcon.style.display = timesIcon.style.display === "none" ? "inline-block" : "none";
+}
 
 
 
