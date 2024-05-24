@@ -16,47 +16,40 @@ navMenuBtn.addEventListener('click', () => {
     navMenu.classList.toggle('show');
 });
 
-function validateForm() {
-    let isValid = true;
 
-    // Get form elements
-    const name = document.getElementById('name');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
 
-    // Get error elements
-    const nameError = document.getElementById('nameError');
-    const emailError = document.getElementById('emailError');
-    const messageError = document.getElementById('messageError');
 
-    // Reset errors
-    nameError.style.display = 'none';
-    emailError.style.display = 'none';
-    messageError.style.display = 'none';
+document.addEventListener("DOMContentLoaded", function () {
+    var liveDemoBtn = document.getElementById("liveDemoBtn");
+    var videoContainer = document.getElementById("videoContainer");
 
-    // Validate name
-    if (name.value.trim() === '') {
-        nameError.style.display = 'block';
-        isValid = false;
-    }
+    liveDemoBtn.addEventListener("click", function (event) {
+        event.preventDefault();
 
-    // Validate email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email.value.trim())) {
-        emailError.style.display = 'block';
-        isValid = false;
-    }
+        videoContainer.style.display = "block";
 
-    // Validate message
-    if (message.value.trim() === '') {
-        messageError.style.display = 'block';
-        isValid = false;
-    }
+        videoContainer.scrollIntoView({ behavior: "smooth" });
+    });
+});
 
-    // If form is valid, submit it
-    if (isValid) {
-        document.getElementById('contactForm').submit();
+
+function scrollToContact() {
+    var contactSection = document.getElementById('contact');
+    if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error('Contact section not found.');
     }
 }
 
-
+function sendEmail() {
+    Email.send({
+        ServiceID: 'service_rw7ol1c',
+        FromEmail: document.getElementById("email").value,
+        To: 'spankto39@gmail.com',
+        Subject: "Contact Info",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}

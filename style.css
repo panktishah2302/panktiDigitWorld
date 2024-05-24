@@ -148,10 +148,8 @@
     font-weight: 500;
 }
 
-.featured-text-btn {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.featured-text-btn .btn {
+    background-color: #5555cc;
 }
 
 .featured-image {
@@ -459,6 +457,12 @@ form button:hover {
         flex-direction: column;
         gap: 20px;
     }
+
+    .category {
+        margin: 0 10px;
+        max-width: none;
+        /* Remove max-width to allow full width on small screens */
+    }
 }
 
 .header {
@@ -471,6 +475,7 @@ form button:hover {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -481,12 +486,10 @@ html {
 }
 
 
-/* Skills Section */
 #skills {
     background-color: #f9f9f9;
     padding: 50px 0;
     text-align: center;
-    /* Center align text */
 }
 
 
