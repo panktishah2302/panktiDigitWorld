@@ -42,14 +42,27 @@ function scrollToContact() {
     }
 }
 
-function sendEmail() {
-    Email.send({
-        ServiceID: 'service_rw7ol1c',
-        FromEmail: document.getElementById("email").value,
-        To: 'spankto39@gmail.com',
-        Subject: "Contact Info",
-        Body: "And this is the body"
-    }).then(
-        message => alert(message)
-    );
+
+function sendMail() {
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_rw7ol1c";
+    const templateID = "template_l9qe1kq"
+
+    emailjs.send(serviceID, templateID, params)
+        .then(
+            res => {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+                console.log(res);
+                alert("Your msg sent successfull")
+            }
+        ).catch(err => {
+            console.log(err)
+        })
 }
