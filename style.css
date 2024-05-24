@@ -7,32 +7,41 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #616a79;
+}
+
+
 .btn {
     font-weight: 500;
     padding: 12px 20px;
-    background: #efefef;
-    border: none;
-    border-radius: 10px;
-    color: #333;
+    background: #6666ff;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 7px;
-    transition: all 0.5s ease;
     cursor: pointer;
     font-size: 15px;
 }
 
-.btn:hover {
-    transform: scale(1.03);
-    background: #6666ff;
-    color: #fff;
-}
 
-.container {
-    width: 100%;
-    height: 100vh;
-}
 
 .wrapper {
     width: 90%;
@@ -52,8 +61,10 @@
 
 .nav-name {
     color: #6666ff;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .nav-menu {
@@ -66,6 +77,7 @@
     display: flex;
     gap: 30px;
     list-style-type: none;
+    font-size: 16px;
 }
 
 .nav-link {
@@ -84,12 +96,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #FFFFFF;
+    background-color: #6666ff;
+    padding: 8px 12px;
+    margin: 0 4px;
 }
 
 .nav-menu-btn {
     display: none;
     cursor: pointer;
     font-size: 24px;
+
 }
 
 #home {
@@ -117,17 +134,11 @@
     justify-content: center;
     align-items: center;
     gap: 7px;
-    transition: all 0.5s ease;
-    cursor: pointer;
     font-size: 15px;
     display: inline-block;
 }
 
-.featured-text-card:hover {
-    transform: scale(1.03);
-    background: #6666ff;
-    color: #fff;
-}
+
 
 .featured-name {
     font-size: 35px;
@@ -150,6 +161,7 @@
 
 .featured-text-btn .btn {
     background-color: #5555cc;
+    color: #FFFFFF;
 }
 
 .featured-image {
@@ -172,8 +184,6 @@
 .featured-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
 }
 
 .section {
@@ -245,15 +255,6 @@
     margin-bottom: 10px;
 }
 
-.bottom-footer {
-    text-align: center;
-    padding: 20px;
-    background: #6666ff;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 20px;
-}
 
 
 
@@ -309,18 +310,7 @@
     background-color: #6666ff;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
-
-.button-container .btn-github {
-    background-color: #333;
-}
-
-.button-container .btn:hover {
-    background-color: #555;
-}
-
-
 
 .contact-info {
     background: #efefef;
@@ -408,7 +398,6 @@ form button:hover {
 .bottom-footer {
     text-align: center;
     padding: 20px;
-    background: #6666ff;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
@@ -466,7 +455,7 @@ form button:hover {
 }
 
 .header {
-    height: 50px;
+    height: 85px;
     width: 100%;
     display: flex;
     justify-content: space-between;

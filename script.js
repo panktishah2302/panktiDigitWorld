@@ -63,6 +63,7 @@ function sendMail() {
                 alert("Your msg sent successfull")
             }
         ).catch(err => {
-            console.log(err)
-        })
+            console.error('Error sending email:', err);
+            alert('Oops! Something went wrong. Please try again later.');
+        });
 }

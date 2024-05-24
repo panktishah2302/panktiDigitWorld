@@ -25,7 +25,7 @@
     <title>Portfolio | Pankti Shah</title>
   </head>
   <body>
-      <header  class="header"id="header" aria-label="Main Navigation">
+      <header  class="header"id="header" aria-label="Main Navigation" role="banner">
         <div class="nav-logo">
           <p class="nav-name">Pankti</p>
         </div>
@@ -49,22 +49,20 @@
           </ul>
         </nav>
         <div class="nav-button">
-          <button class="btn">
-            Download CV <i class="fa-solid fa-download"></i>
+          <button class="btn" style="color: #FFFFFF;">
+            Download CV 
           </button>
         </div>
-        <div class="nav-menu-btn" id="navMenuBtn" aria-label="Navigation Menu Button">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
+        
       </header>
-      <main class="wrapper">
+      <main class="wrapper" role="main">
         <section class="featured-box" id="home">
           <div class="featured-text">
             <div class="featured-text-card">
               <span>Pankti Shah</span>
             </div>
             <div class="featured-name">
-              <p>I'm <span class="typedText"></span></p>
+              <p style="color: #000000;">I'm <span class="typedText"></span></p>
             </div>
             <div class="featured-text-info">
               <p>
@@ -74,9 +72,9 @@
               </p>
             </div>
             <div class="featured-text-btn">
-              <button class="btn blue-btn" onclick="scrollToContact()">Hire Me</button>
-              <button class="btn">
-                Download CV <i class="fa-solid fa-download"></i>
+              <button class="btn blue-btn" onclick="scrollToContact()" style="background-color: #000000; color:#FFFFFF">Hire Me</button>
+              <button class="btn" style="background-color: #aeb1b8; color:#000000">
+                Download CV 
               </button>
             </div>
           </div>
@@ -125,7 +123,7 @@
               <ul class="skills-list">
                 <li class="skill-item">HTML/CSS</li>
                 <li class="skill-item">JavaScript</li>
-                <li class="skill-item">Responsive Design</li>
+                <li class="skill-item">ReactJS</li>
               </ul>
             </div>
             <div class="category">
@@ -133,22 +131,19 @@
               <ul class="skills-list">
                 <li class="skill-item">Python</li>
                 <li class="skill-item">Django</li>
-                <li class="skill-item">Node.js</li>
               </ul>
             </div>
             <div class="category">
               <h2>Database</h2>
               <ul class="skills-list">
-                <li class="skill-item">SQL</li>
+                <li class="skill-item">MySQL</li>
                 <li class="skill-item">SQLite</li>
-                <li class="skill-item">MongoDB</li>
               </ul>
             </div>
             <div class="category">
               <h2>Version Control</h2>
               <ul class="skills-list">
-                <li class="skill-item">Git</li>
-                <li class="skill-item">GitHub</li>
+                <li class="skill-item">Git/Github</li>
               </ul>
             </div>
           </div>
@@ -213,9 +208,8 @@
                 <p>Technologies: React, JavaScript, HTML/CSS, Bootstrap, News API</p>
                 <div class="button-container">
                   <a href="https://github.com/panktishah2302/News-React-App" class="btn btn-github" target="_blank">GitHub Repo</a>
-                  <button type="button" class="btn btn-primary btn btn-live-demo" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Live Demo
-                  </button></div></div>
+                  <a href="videonews.mp4" class="btn btn-live-demo" target="_blank">Live Demo</a>
+                 </div></div>
 
           
               <div class="col project-box">
@@ -227,7 +221,7 @@
                 <p>Technologies: Django, Python, HTML/CSS, SQLite</p>
                 <div class="button-container">
                   <a href="https://github.com/panktishah2302/foodcalorietracker" class="btn btn-github" target="_blank">GitHub Repo</a>
-                  <a href="https://yourappdomain.com/food-calorie-tracker" class="btn btn-live-demo" target="_blank">Live Demo</a>
+                  <a href="" class="btn btn-live-demo disabled" target="_blank" aria-disabled="true">Live Demo</a>
                 </div>
               </div>
               <div class="col project-box">
@@ -239,7 +233,7 @@
                 <p>Technologies: React, JavaScript, HTML/CSS</p>
                 <div class="button-container">
                   <a href="https://github.com/yourusername/inotebook" class="btn btn-github" target="_blank">GitHub Repo</a>
-                  <a href="https://yourappdomain.com/inotebook" class="btn btn-live-demo" target="_blank">Live Demo</a>
+                  <a href="" class="btn btn-live-demo disabled" target="_blank" aria-disabled="true">Live Demo</a>
                 </div>
               </div>
             </div>
@@ -261,8 +255,8 @@
             <div class="col">
               <div class="form-control">
                       <div class="form-inputs">
-                          <input type="text" class="input-field" placeholder="Name" id="name" aria-label="Name" required />
-                          <input type="email" class="input-field" placeholder="Email" id="email" aria-label="Email" required />
+                        <input type="text" class="input-field" placeholder="Name" id="name" aria-label="Name" required minlength="2" maxlength="50"/>
+                        <input type="email" class="input-field" placeholder="Email" id="email" aria-label="Email" required />
                       </div>
                       <div class="text-area">
                           <textarea placeholder="Message" id="message" aria-label="Message" required></textarea>
@@ -278,7 +272,7 @@
           </div>
         </section>
              </main>
-      <footer>
+      <footer role="contentinfo">
         <div class="bottom-footer">
           <p>
             Copyright &copy;
@@ -287,20 +281,7 @@
           </p>
         </div>
       </footer>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">News Application</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="videonews.mp4"  allowfullscreen></iframe>
-            </div>
-          </div>
-          
+    </div>      
         </div>
         
       <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
